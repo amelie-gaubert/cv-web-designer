@@ -1,0 +1,235 @@
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+
+}
+
+#section{
+    background-image: url("../image/amelie.png")
+
+}
+
+#baniere{
+    background-image: url("../image/fond-web-agl.jpg");
+    height: 1080px;
+
+}
+
+ul { 
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background: #ce5a82; 
+    margin: 0;
+ 
+}
+
+body {
+    font-family:"fantasy", times, serif;
+    color: white;
+    background-color: #fd6c9e;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.center {
+    text-align:center ;
+}
+
+p.center {
+    margin: auto;
+}
+
+#global{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.colonne {
+    margin: 15px 25px 0 25px;
+    padding: 0;
+}
+
+.colonne:last-child {
+    padding-bottom: 60px;
+}
+
+.colonne::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.colonne div {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 0 0 0 35px;
+    padding: 0;
+}
+
+.rotate{
+    display: flex;
+    flex-direction: row;
+    background-color: #999;
+}
+
+/* Rotation */
+.rotate div img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.rotate div:hover img {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg)
+}
+
+/* Flou */
+.blur div img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.blur div:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+#page{
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    height:200px;
+    background-color: #A9A9A9;
+}
+
+.flotte {
+    float:left;
+}
+
+.progress-bar{
+    width: 300px;
+    height: 24px;
+    padding: 4px;
+    background-color: black;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, o 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 apx 0
+    border: none
+}
+
+.progress-bar:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4),0 1px 1px #000;
+
+}
+
+.progress-bar:after {
+    content: '\\\\\\\\\\';
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    transform: skewx (-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: shewX(-30deg);
+    -o-transform: skewX(-30deg);
+    font: bold 120px/80px sans-serif;
+    letter-spacing: -6px;
+    color: #000;
+    opacity: 0.06;
+}
+
+.blue:before{
+    background:#099;
+    background: -webkit-gradient (linear, 0% 0%, 0% 100%, from(#099), to(#006a6b));
+    background: -moz-linear-gradient(top, #099, #006a6b);
+}
+
+#competence{
+    display:flex; 
+    flex-direction:row;
+}
+
+.typesLogiciels{
+    display:flex;
+    flex-direction:column;
+}
+
+.logiciels{
+    display:flex;
+    flex-direction:row;
+}
+
+#competences{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.typesLogiciels{
+    display: flex;
+    flex-direction: column;
+}
+.logiciels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px){
+    #nabar ul{
+        flex-direction:colum;
+    }
+    #travels{
+        flex-direction:colum;
+    }
+}
+
+#navbar ul{
+    display: none;
+}
+
+
+@media screen  (min-width: 481px){
+    #navbar ul{
+        flex-direction: column;
+    }
+}
+
+h
+{
+    text-decoration: blink;
+}
+.souligne
+{
+    text-decoration: underline;
+}
